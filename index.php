@@ -11,7 +11,7 @@
             background: linear-gradient(to bottom, #000000, #ff69b4) fixed;
         }
 
-        /* Card */
+        /* Card Layout */
         .login-card {
             max-width: 430px;
             background: rgba(20, 20, 20, 0.65);
@@ -23,7 +23,7 @@
             color: #fff;
         }
 
-        /* Round logo icon */
+        /* Round Logo Wrapper */
         .logo-circle {
             width: 70px;
             height: 70px;
@@ -38,34 +38,28 @@
             box-shadow: 0 0 20px rgba(255, 20, 147, 0.6);
         }
 
-        /* Inputs */
+        /* Input Form Controls */
         .login-card .input-group-text {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-right: 0;
             color: #ff69b4;
         }
-        .login-card .form-control, .login-card .form-select {
+        .login-card .form-control {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-left: 0;
             color: #fff;
         }
         .login-card .form-control::placeholder { color: rgba(255, 255, 255, 0.5); }
-        .login-card .form-control:focus, .login-card .form-select:focus {
+        .login-card .form-control:focus {
             box-shadow: none;
             border-color: #ff69b4;
             background: rgba(255, 255, 255, 0.12);
             color: #fff;
         }
 
-        /* Styling Dropdown Options Panel */
-        .login-card .form-select option {
-            background: #141414;
-            color: #fff;
-        }
-
-        /* Button */
+        /* Action Buttons */
         .btn-pink {
             background: linear-gradient(135deg, #ff69b4, #ff1493);
             border: 0;
@@ -101,19 +95,9 @@
                 </div>
                 
                 <!-- Password Field -->
-                <div class="input-group mb-3">
+                <div class="input-group mb-4">
                     <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
                     <input type="password" name="password" placeholder="Password" class="form-control" required>
-                </div>
-
-                <!-- NEW: Role Dropdown Input Field Selection -->
-                <div class="input-group mb-4">
-                    <span class="input-group-text"><i class="bi bi-sliders"></i></span>
-                    <select name="role" class="form-select" required>
-                        <option value="" disabled selected style="color: rgba(255, 255, 255, 0.5);">Select Account Type</option>
-                        <option value="listener">Listener Account</option>
-                        <option value="user">Creator / Artist Account</option>
-                    </select>
                 </div>
 
                 <button type="submit" name="login_btn" class="btn btn-pink btn-lg w-100">Login</button>
